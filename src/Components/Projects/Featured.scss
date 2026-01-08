@@ -1,0 +1,84 @@
+@import "src/Styles/fonts";
+@import "src/Styles/functions";
+@import "src/Styles/variables";
+
+.featureContainer {
+    height: auto;
+    width: 100%;
+    @extend %fontMontserrat;
+}
+
+.featureContainer > h1 {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 50px 0;
+    text-indent: 40px;
+    // border-top: 2px solid #37515f70;
+    color: #030c3a;
+    font-weight: normal;
+}
+
+.featureProjectContainer {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+.featureProject {
+    max-width: 400px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 15px -3px #00000034,0 10px 20px -2px #0000000a!important;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.featureProjectImgContainer {
+    width: auto;
+    height: auto;
+    min-width: 250px;
+    overflow: hidden;
+}
+
+.featureProjectImg {
+    height: auto;
+    width: rem(350);
+}
+
+.featureProjectTitle {
+    font-size: rem(24);
+}
+
+
+.projectDetailsLink {
+    display:flex;
+    flex-grow: 1; 
+    align-items: flex-end;
+    justify-content: end;
+    width: 100%;
+}
+
+.projectRole {
+    color: $Purple;
+font-weight: bold;
+}
+
+.galleryLink, .galleryLink:visited {
+    color:$Pink;
+    text-align: right;
+    padding: 40px 40px 0 0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px 0 0;
+}
+
+.galleryLink:hover {
+    color: $Pink;
+    text-decoration: underline;
+}

@@ -1,0 +1,67 @@
+@import "src/Styles/fonts";
+@import "src/Styles/functions";
+@import "src/Styles/variables";
+
+.navContainer {
+    height: 10vh;
+    @extend %fontMontserrat;
+    display: flex;
+    align-items: center;
+    // border-bottom: 2px solid #37515f70;
+
+}
+
+.name {
+    font-size: rem(35);
+    position: absolute;
+    left: 0;  
+    display: inline;
+    padding-left: 40px;
+    color: #071641;
+    // font-weight: bold;
+    // text-shadow: 1px 1px 0px #071641;
+}
+
+.nav {
+    margin:0;
+    position: absolute;
+    right: 0;
+    font-size: rem(22);
+}
+
+
+ul {
+    margin:0;
+    list-style: none;
+    display: inline;
+}
+
+.navLink {
+  color: $Pink;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navLink:hover {
+text-decoration: underline;
+}
+
+.nav a {
+    text-decoration: none;
+    color: $Pink;
+  font-weight: bold;
+}
+
+.nav a:hover {
+text-decoration: underline;
+
+}
+li {
+    display: inline;
+    padding: 0 20px;
+}
+
+ul:last-child {
+    padding-right: 20px;
+}

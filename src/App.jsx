@@ -1,0 +1,17 @@
+import "./App.css";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Views/Home";
+import ProjectGallery from "./Views/ProjectGallery";
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projectgallery" element={<ProjectGallery />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;

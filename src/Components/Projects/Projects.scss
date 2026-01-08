@@ -1,0 +1,87 @@
+@import "src/Styles/fonts";
+@import "src/Styles/functions";
+@import "src/Styles/variables";
+.projectsContainer {
+    background-color: #F9F9F9;
+    height: auto;
+    width: 100%;
+    @extend %fontMontserrat;
+    padding-bottom: 80px;
+}
+
+.projectsContainer > h1 {
+    width: 100%;
+    margin: 0;
+    padding: 50px 0;
+    text-indent: 40px;
+    color: #030c3a;
+    font-weight: normal;
+}
+
+.projectsContainer {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.project {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    max-width: 280px;
+    background-color: white;
+    border-radius: 10px;
+    justify-items: center;
+    box-shadow: 0 2px 15px -3px #00000034,0 10px 20px -2px #0000000a!important;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.projectImgContainer {
+    width: auto;
+    height: auto;
+    min-width: 300px;
+    overflow: hidden;
+}
+
+.projectImg {
+    height: auto;
+    width: rem(220);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.projectTitle {
+    font-size: rem(24);
+
+}
+.projectRole {
+    color: $Purple;
+font-weight: bold;
+}
+
+.projectDetailsLink {
+    display:flex;
+    flex-grow: 1; 
+    align-items: flex-end;
+    justify-content: end;
+    width: 100%;
+}
+
+.galleryLink, .galleryLink:visited {
+    color: $Pink;
+    text-align: right;
+    padding: 40px 40px 0 0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.galleryLink:hover {
+    color: $Pink;
+    text-decoration: underline;
+}

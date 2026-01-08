@@ -1,0 +1,96 @@
+  @import "src/Styles/fonts";
+@import "src/Styles/functions";
+@import "src/Styles/variables";
+
+  .Modal {
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   height: auto;
+   width: 80%;
+   background-color: white;
+   box-shadow: 0 2px 15px -3px #00000034,0 10px 20px -2px #0000000a!important;
+   display: flex;
+   flex-direction: column;
+   border-radius: 10px;
+   color: #030c3a;
+  }
+
+  .Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f9f9f9c6;
+  }
+
+  .openModal {
+   background: transparent;
+    border: none;
+    color: $Pink;
+    font-size: 1em;
+    margin-top: 20px;
+  }
+
+  .openModal:hover {
+    text-decoration: underline;
+  }
+
+  .closebtn {
+   font-size: 2rem;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: $Pink;
+  }
+
+  .closebtn:hover {
+    font-size: 2.4rem;
+    transition: font-size .5s;
+
+  }
+
+  .Modal > h1 {
+    text-align: center;
+}
+
+.description {
+    margin: rem(0) auto;
+    font-size: rem(16);
+    line-height: rem(26);
+    max-width: rem(1000);
+    z-index: 1;
+    border-radius: 5px;
+    padding: rem(8) rem(25);
+}
+
+.galleryContainer {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+
+.gallery {
+    height: 100%;
+    width: 80%;
+    margin: rem(40) auto;
+    
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+    max-height: calc(100vh -  300px);
+}
+
+.image-gallery-svg:hover {
+    color: $Pink !important;
+}
+
+svg {
+    color: white;
+}
+

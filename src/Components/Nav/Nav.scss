@@ -3,37 +3,32 @@
 @import "src/Styles/variables";
 
 .navContainer {
-    height: 10vh;
-    @extend %fontMontserrat;
-    display: flex;
-    align-items: center;
-    // border-bottom: 2px solid #37515f70;
-
+  height: 10vh;
+  @extend %fontMontserrat;
+  display: flex;
+  align-items: center;
 }
 
 .name {
-    font-size: rem(35);
-    position: absolute;
-    left: 0;  
-    display: inline;
-    padding-left: 40px;
-    color: #071641;
-    // font-weight: bold;
-    // text-shadow: 1px 1px 0px #071641;
+  font-size: rem(35);
+  position: absolute;
+  left: 0;
+  display: inline;
+  padding-left: 40px;
+  color: #071641;
 }
 
 .nav {
-    margin:0;
-    position: absolute;
-    right: 0;
-    font-size: rem(22);
+  margin: 0;
+  position: absolute;
+  right: 0;
+  font-size: rem(22);
 }
 
-
 ul {
-    margin:0;
-    list-style: none;
-    display: inline;
+  margin: 0;
+  list-style: none;
+  display: inline;
 }
 
 .navLink {
@@ -44,24 +39,68 @@ ul {
 }
 
 .navLink:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .nav a {
-    text-decoration: none;
-    color: $Pink;
+  text-decoration: none;
+  color: $Pink;
   font-weight: bold;
 }
 
 .nav a:hover {
-text-decoration: underline;
-
+  text-decoration: underline;
 }
+
 li {
-    display: inline;
-    padding: 0 20px;
+  display: inline;
+  padding: 0 20px;
 }
 
 ul:last-child {
-    padding-right: 20px;
+  padding-right: 20px;
+}
+
+@media only screen and (max-width: 775px) {
+  .navContainer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .name {
+    position: relative;
+    margin: rem(10) 0;
+  }
+
+  .nav {
+    position: relative;
+    margin-bottom: rem(8);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .nav {
+    font-size: 1.2em;
+    margin: 0 auto;
+  }
+
+  .name {
+    padding: 0;
+  }
+
+  ul {
+    padding: 0 20px;
+  }
+
+  li {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  li {
+    width: 100%;
+    display: block;
+  }
 }

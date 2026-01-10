@@ -3,23 +3,29 @@
 @import "src/Styles/variables";
 
 .headerContainer {
-    min-height: 25vh;
-    width: 100%;
-    @extend %fontMontserrat;
-    margin: rem(20) 0 rem(40) 0;
-    justify-items: center;
-    background-image: url("../../../public/images/media/9.jpg");
-    background-size: cover; 
+  min-height: 25vh;
+  width: 100%;
+  @extend %fontMontserrat;
+  margin: rem(20) 0 rem(40) 0;
+  justify-items: center;
+  background-image: url("../../../public/images/media/9.jpg");
+  background-size: cover;
 }
 
 .canvas {
-    position: absolute;
-    top: 19.8%;
-    overflow: hidden;
-    border-radius: 5px;
-    margin-right: 58px;
+  position: absolute;
+  top: 19.8%;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-right: 58px;
 }
 .tvimg {
-    height: 350px;
-    width: auto;
+  height: 350px;
+  width: auto;
 }
+
+// @media only screen and (max-width: 550px) {
+//   .tvimg {
+//     display: none;
+//   }
+// }

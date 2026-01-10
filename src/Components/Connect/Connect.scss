@@ -5,12 +5,12 @@
 .connectContainer {
   height: auto;
   @extend %fontMontserrat;
-   margin: rem(80) rem(30);
+  margin: rem(80) rem(30);
 }
 
 .connectTitle {
   width: auto;
-  margin: 0 20px 0 0 ;
+  margin: 0 20px 0 0;
   text-indent: 40px;
   color: #030c3a;
   font-weight: normal;
@@ -27,7 +27,7 @@
 }
 
 .connectContents {
-  margin: rem(20)  rem(30);
+  margin: rem(20) rem(30);
   font-size: 1.2rem;
   line-height: 1.875rem;
 }
@@ -37,13 +37,13 @@
   width: rem(200);
   overflow: hidden;
   border-radius: 5%;
-  border: 3px solid  rgba(45,117,112, .6);
-  margin: rem(50) rem(10) 0 ;
+  border: 3px solid rgba(45, 117, 112, 0.6);
+  margin: rem(50) rem(10) 0;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 img {
-  margin: 0px 00px;
+  margin: 0px 0px;
   height: 300px;
 }
 
@@ -57,7 +57,7 @@ img {
   font-weight: bold;
 }
 
-.socialLinks{ 
+.socialLinks {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -68,37 +68,40 @@ img {
     color: $Pink;
     text-decoration: none;
     a:hover {
-        color: $Pink; 
+      color: $Pink;
     }
-}
-a:hover {
+  }
+  a:hover {
     cursor: pointer;
     text-decoration: underline;
   }
 }
 
-  #talkbubble {
-      width: 100%;
-      height: auto;
-      background: #3cdfd24f;
-      position: relative;
-      -moz-border-radius: 10px;
-      -webkit-border-radius: 10px;
-      border-radius: 10px;
-      padding: 20px;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+#talkbubble {
+  width: 100%;
+  height: auto;
+  background: #3cdfd24f;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#talkbubble:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 106px;
+  width: 0;
+  height: 0;
+  border-top: 24px solid transparent;
+  border-right: 26px solid #3cdfd24f;
+  border-bottom: 24px solid transparent;
+}
 
-    }
-    #talkbubble:before {
-      content: "";
-      position: absolute;
-      right: 100%;
-      top: 106px;
-      width: 0;
-      height: 0;
-      border-top: 24px solid transparent;
-      border-right: 26px solid #3cdfd24f;
-      border-bottom: 24px solid transparent;
-    }
-  
-
+@media only screen and (max-width: 1200px) {
+  .connectContainer {
+    // background-color: lightpink;
+  }
+}
